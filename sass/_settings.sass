@@ -1,0 +1,36 @@
+*
+  box-sizing: border-box
+  margin: 0
+ul
+  padding: 0
+  margin-left: 20px
+.container
+  max-width: 1110px
+  margin: auto
+body
+  background-color: $light
+  @include text-base
+
+button
+  cursor: pointer
+button:focus
+  outline: none
+.button
+  background-color: $active
+  color: $light
+  padding: 15px
+  @include subtitle--big
+  @include border
+  color: $light
+  text-align: center
+
+.title
+  @include title
+
+  &__big
+    font-weight: 700
+  &__smoll
+    font-size: 40px
+a
+  text-decoration: none
+  color: inherit
