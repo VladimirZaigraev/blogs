@@ -4,8 +4,10 @@
 ul
   padding: 0
   margin-left: 20px
+  list-style: none
+
 .container
-  max-width: 1110px
+  max-width: 1140px
   margin: auto
 body
   background-color: $light
@@ -13,24 +15,107 @@ body
 
 button
   cursor: pointer
+  background-color: none
 button:focus
   outline: none
-.button
-  background-color: $active
-  color: $light
-  padding: 15px
-  @include subtitle--big
-  @include border
-  color: $light
-  text-align: center
 
 .title
   @include title
-
-  &__big
-    font-weight: 700
-  &__smoll
-    font-size: 40px
+.box__title
+  @include box__title
 a
   text-decoration: none
   color: inherit
+
+.button-1
+  border: 2px solid $light
+  border-radius: 8px
+  opacity: 1
+  background: transparent
+  color: $light
+  font-family: $ff-base
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 22px
+  height: 48px
+  padding-left: 23px
+  padding-right: 25px
+  vertical-align: middle
+.button-2
+  border: none
+  border-radius: 8px
+  background-color: $blue
+  color: $light
+  font-family: $ff-base
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  padding-top: 9px
+  padding-bottom: 9px
+.input
+  border: none
+  border-radius: 8px
+  height: 56px
+  color: $gray
+  font-family: $ff-base
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 22px
+.box
+  background: $light
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+  border-radius: 16px
+.box__info
+  border: 1px solid #E5EAF4
+
+.verified
+  font-family: $ff-base
+  font-style: italic
+  font-weight: normal
+  font-size: 14px
+  line-height: 19px
+  color: #5A7184
+  position: relative
+  margin-left: 24px
+  &::before
+    content: ''
+    background-image: url(/img/verified.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    position: absolute
+    top: 0
+    left: -23px
+    height: 16px
+    width: 16px
+.avatar
+  border-radius: 50%
+  width: 40px
+  height: 40px
+
+.date
+  font-family: $ff-base
+  font-style: normal
+  font-weight: 600
+  font-size: 16px
+  line-height: 22px
+.name
+  font-family: $ff-base
+  font-style: normal
+  font-weight: 600
+  font-size: 16px
+  line-height: 22px
+  margin-bottom: 3px
+
+.hover:hover
+  color: $blue
+
+.hover-1:hover
+  color: $blue
+  background-color: $light
+
+.hover-2:hover
+  color: $blue
+  background-color: $light
+  border: 2px solid $blue

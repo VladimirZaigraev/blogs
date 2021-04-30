@@ -1,77 +1,67 @@
-$primary: #5C9AD3
-$secondary: #F4FAFA
-$text-color: #667385
-$dark: #6F83A6
-$light: #ffffff
-$active: #F9B52E
-//$gray: #BDBDBD
-//$hover:
 
-$primary: #1F4873
-$secondary: #F4FAFA
-$text-color: #28333E
-$dark: #6F83A6
+$text-color: #5A7184
+$dark: #0D2436
+$subtitle-color: #183B56
 $light: #ffffff
-$active: #C60440
+$blue: #1565D8
+$gray: #959EAD
+$green: #36B37E
 
 $ff-title: 'Roboto', sans-serif
 $ff-base: 'Open Sans', sans-serif
 
-$fs-title: 54px
-$fs-base: 16px
-
+$fs-title: 48px
+$fs-base: 18px
 //размер шрифта для мелких титлов и кнопок
-$fs-subtitle: 20px
+$fs-subtitle: 36px
 
 @mixin text-base
   font-family: $ff-base
   font-size: $fs-base
-  font-weight: 300
+  font-style: normal
+  font-weight: normal
+  line-height: 32px
   color: $text-color
-
-@mixin text-base--big
-  font-family: $ff-base
-  color: $text-color
-  font-size: $fs-base
-  font-weight: 700
 
 @mixin title
   font-family: $ff-title
-  font-weight: 300
-  text-transform: uppercase
+  font-style: normal
+  font-weight: bold
+  line-height: 60px
   font-size: $fs-title
-  color: $primary
-@mixin title--big
-  font-family: $ff-title
-  font-weight: 300
-  text-transform: uppercase
-  font-size: $fs-title
-  color: $primary
-//шрифт для мелких титлов и кнопок
+  color: $light
+
 @mixin subtitle
   font-family: $ff-title
-  font-weight: 300
   font-size: $fs-subtitle
-  color: $primary
-  text-transform: uppercase
+  color: $subtitle-color
+  font-style: normal
+  font-weight: bold
+  line-height: 48px
+  letter-spacing: 0.2px
 
-@mixin subtitle--big
+@mixin subtitle-card
   font-family: $ff-title
-  font-weight: 700
+  font-style: normal
+  font-weight: bold
   font-size: $fs-subtitle
-  color: $primary
-  text-transform: uppercase
+  line-height: 48px
+  letter-spacing: 0.2px
+  color: $light
+@mixin box__title
+  font-family: $ff-title
+  font-style: normal
+  font-weight: bold
+  font-size: 31px
+  line-height: 48px
+  letter-spacing: 0.2px
+  color: $subtitle-color
 
 @mixin border
   border-radius: 16px
   border: none
-@mixin border--top
-  border-radius: 16px 16px 0 0
-  border: none
-@mixin border--bottom
-  border-radius: 0 0 16px 16px
-  border: none
 
-@mixin padding-section
-  padding-top: 50px
-  padding-bottom: 50px
+@mixin shadow
+  filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
+@mixin img-cover
+  object-fit: cover

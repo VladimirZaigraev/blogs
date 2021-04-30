@@ -1,0 +1,53 @@
+.featured
+  background-image: url(../img/bottom.svg)
+  background-repeat: no-repeat
+  background-size: 100%
+  background-position: top
+  height: 200px
+  top: 567px
+  position: absolute
+  //bottom: 0
+  left: 0
+  right: 0
+  padding-bottom: 96px
+  &__box
+    margin-top: -38px
+.box
+  display: flex
+  overflow: hidden
+  &__image
+    @include img-cover
+    width: 50%
+  &__info
+    padding: 30px 48px 32px 32px
+    width: 50%
+  &__schild
+    background-color: #EBF7F2
+    font-family: $ff-base
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: $green
+    border-radius: 20px
+    padding: 6px 12px 6px 12px
+    margin-bottom: 16px
+    display: inline-block
+  &__title
+    margin-bottom: 20px
+  &__text
+    margin-bottom: 43px
+    display: block
+    margin-right: 20px
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-autor
+    display: flex
+    &__right
+      display: flex
+      flex-direction: column
+      margin-left: 12px
+    &__name
+      color: $subtitle-color

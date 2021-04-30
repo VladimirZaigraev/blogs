@@ -3,19 +3,305 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Исследование зрелости РМ</title>
+    <title>ehya:Отдел новостей</title>
   </head>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
   <body>
-    <header class="header">
-      <div class="container"></div>
+    <header id="#header" class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#" class="header__logo header-logo"
+            ><img src="img/Logo.svg" alt="logo" class="header-logo__img"
+          /></a>
+          <div class="header__navbar-top">
+            <nav class="header__nav header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link hover">Домой</a>
+                </li>
+                <li class="header-nav__item">
+                  <div class="header-nav__dropdown dropdown">
+                    <a
+                      href="#"
+                      class="header-nav__link header-nav__link--arrow hover"
+                      >Лэндинги</a
+                    >
+
+                    <div class="dropdown-content">
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Лэндинги 1</a
+                      >
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Лэндинги 2</a
+                      >
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Лэндинги 3</a
+                      >
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Лэндинги 4</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="header-nav__item">
+                  <div class="header-nav__dropdown dropdown">
+                    <a
+                      href="#"
+                      class="header-nav__link header-nav__link--arrow hover"
+                      >Cтраницы</a
+                    >
+                    <div class="dropdown-content">
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Cтраница 1</a
+                      >
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Cтраница 2</a
+                      >
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Cтраница 3</a
+                      >
+                      <a class="dropdown-content__link hover-1" href="#"
+                        >Cтраница 4</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link hover">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.header__nav -->
+            <button data-toggle="modal" class="header__button button-1 hover-1">
+              Получить
+            </button>
+          </div>
+          <!-- /.header__navbar-top -->
+          <button class="header__menu-button menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.header__wrapper -->
+      </div>
+      <!-- /.container -->
+      <div class="container">
+        <div class="header__navbar-bottom">
+          <nav class="header__nav header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="index.html" class="header-nav__link">Домой</a>
+              </li>
+              <li class="header-nav__item">
+                <a
+                  data-target="#one"
+                  href="#"
+                  class="header-nav__link header-nav__link--arrow"
+                  >Лендинги</a
+                >
+                <ul
+                  id="one"
+                  class="header-nav__dropdown bottom-dropdown dropdown"
+                >
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 4</a>
+                  </li>
+                </ul>
+                <!-- /.header-nav__drop-down -->
+              </li>
+              <li class="header-nav__item">
+                <a
+                  data-target="#two"
+                  href="#"
+                  class="header-nav__link header-nav__link--arrow"
+                  >Страницы</a
+                >
+                <ul
+                  id="two"
+                  class="header-nav__dropdown bottom-dropdown dropdown"
+                >
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 4</a>
+                  </li>
+                </ul>
+                <!-- /.header-nav__drop-down -->
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Помощь</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.header__nav -->
+          <button data-toggle="modal" class="header__button button-1">
+            Получить
+          </button>
+        </div>
+        <!-- /.header__navbar-bottom -->
+      </div>
       <!-- /.container -->
     </header>
     <!-- /.header -->
+    <section class="title-page">
+      <div class="title-page__background">
+        <div class="container">
+          <div class="title-page__wrapper">
+            <h1 class="title title-page__title">Отдел новостей</h1>
+            <form action="#" class="search title-page__search">
+              <input
+                type="text"
+                class="input search__input"
+                placeholder="Поиск постов"
+                autofocus
+              />
+              <img
+                src="img/search.svg"
+                alt="icon: search"
+                class="search__img"
+              />
+              <button class="search__button button-2 hover-2">Поиск</button>
+            </form>
+            <div class="title-page__tags tags">
+              <span class="tags__popular">Популярные Тэги :</span>
+              <span class="tags__name hover-1"> <a href="#">Design</a> </span>
+              <span class="tags__name hover-1">
+                <a href="">User Experience</a>
+              </span>
+              <span class="tags__name hover-1"
+                ><a href="">User Interfaces</a></span
+              >
+            </div>
+            <!-- /.title-page__tegs -->
+          </div>
+          <!-- /.title-page__wrapper -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.title-page__background -->
+    </section>
+    <!-- /.title-page -->
+    <section class="featured">
+      <div class="container">
+        <div class="featured__box box">
+          <img src="img/offer.png" alt="image" class="box__image" />
+          <div class="box__info">
+            <span class="box__schild"> <a href="">Предложения</a> </span>
+            <h3 class="box__title">
+              Дешевые Авиабилеты - Отличный Способ Сэкономить
+            </h3>
+            <span class="box__text"
+              >В этом цифровом поколении, где информацию можно легко получить за
+              секунды, визитки ...</span
+            >
+            <div class="box__bottom">
+              <div class="box__autor box-autor">
+                <img
+                  src="img/ava_1.png"
+                  alt="avatar"
+                  class="box-autor__avatar avatar"
+                />
+                <div class="box-autor__right">
+                  <span class="box-autor__name name">Viola Manisa</span>
+                  <span class="box-autor__verified verified">
+                    Verified writer
+                  </span>
+                </div>
+              </div>
+              <!-- /.box__autor -->
+              <span class="box__date date">02 May</span>
+            </div>
+          </div>
+          <!-- /.box__info -->
+        </div>
+        <!-- /.featured__card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="popular">
+      <div class="container"><h2 class="title">Популярные Статьи</h2></div>
+      <!-- /.container -->
+    </section>
+    <!-- /.popular -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <img class="modal__logo" src="img/Logo.svg" alt="logo" />
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Фамилия Имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="phone input modal__input"
+            placeholder="Номер телефона*"
+            name="phone"
+            required
+            minlength="18"
+            id="phone2"
+          />
 
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message input modal__message"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea>
+
+          <button class="button-2 modal__button hover" type="submit">
+            Отправить
+          </button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

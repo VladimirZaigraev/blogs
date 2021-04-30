@@ -1,0 +1,97 @@
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 100
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    padding-top: 26px
+    padding-bottom: 26px
+    align-items: start
+
+  &__navbar
+    &-top
+      display: flex
+      align-items: center
+    &-bottom
+      display: none
+  &-logo
+    margin-top: 10px
+  &-nav
+    margin-right: 43px
+    margin-left: auto
+    &__list
+      display: flex
+    &__item
+      margin-right: 30px
+    &__link
+      margin-top: 13px
+      color: $light
+      font-family: $ff-base
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      &--arrow:after
+        position: relative
+        content: ''
+        background-image: url(../img/arrow-nav.svg)
+        background-repeat: no-repeat
+        display: block
+        height: 16px
+        width: 9px
+        float: right
+        top: 14px
+        //margin-top: 7px
+
+        //&-active:after
+          //background-image: url(../img/arrow-nav_top.svg)
+.dropdown
+  &--active
+    display: block
+  &__link
+    font-family: $ff-base
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $light
+.menu-button
+  display: none
+.dropdown .dropbtn
+  border: none
+  outline: none
+  background-color: inherit
+  color: $light
+.dropdown-content
+  display: none
+  position: absolute
+  z-index: 1
+  width: 80%
+  top: 65px
+  right: 30%
+  left: 30%
+  margin: auto
+  &:hover
+    //background-color: #ddd
+
+.bottom-dropdown
+  display: none
+.header-nav__dropdown--active
+  display: block
+.dropdown:hover .dropdown-content
+  display: block
+.dropdown-content
+  &__link
+    color: $light
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    border: 1px solid $light
+    border-radius: 4px
+    padding: 4px 17px 4px 17px
+    margin-right: 16px
+    white-space: nowrap
