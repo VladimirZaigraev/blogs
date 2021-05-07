@@ -23,6 +23,9 @@ button:focus
   @include title
 .box__title
   @include box__title
+.h2-title
+  @include subtitle
+
 a
   text-decoration: none
   color: inherit
@@ -51,8 +54,38 @@ a
   font-style: normal
   font-weight: bold
   font-size: 16px
-  padding-top: 9px
-  padding-bottom: 9px
+  padding-top: 4px
+  padding-bottom: 4px
+.button-3
+  border: 2px solid $blue
+  border-radius: 8px
+  background-color: $light
+  padding: 13px 20px 13px 20px
+  color: $blue
+  font-family: $ff-base
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 22px
+  min-width: 183px
+  height: 48px
+  letter-spacing: 0.3px
+.button-3:after
+  position: relative
+  content: ''
+  background-image: url(../img/arrow-btn.svg)
+  background-repeat: no-repeat
+  display: block
+  height: 16px
+  width: 13px
+  float: right
+  top: 70%
+  right: -4px
+  transform: translateY(-50%)
+  bottom: auto
+.button-3:hover:after
+  background-image: url(../img/arrow-btn_light.svg)
+
 .input
   border: none
   border-radius: 8px
@@ -69,6 +102,8 @@ a
   border-radius: 16px
 .box__info
   border: 1px solid #E5EAF4
+  border-top-right-radius: 16px
+  border-bottom-right-radius: 16px
 
 .verified
   font-family: $ff-base
@@ -81,7 +116,7 @@ a
   margin-left: 24px
   &::before
     content: ''
-    background-image: url(/img/verified.svg)
+    background-image: url(../img/verified.svg)
     background-repeat: no-repeat
     background-size: cover
     position: absolute
@@ -108,14 +143,118 @@ a
   line-height: 22px
   margin-bottom: 3px
 
-.hover:hover
+.hover-menu:hover
   color: $blue
-
+.hover-title:hover
+  color: $blue
 .hover-1:hover
   color: $blue
   background-color: $light
-
-.hover-2:hover
+.hover-btn:hover
   color: $blue
   background-color: $light
   border: 2px solid $blue
+.hover-btn-2:hover
+  color: $light
+  background-color: $blue
+  border: 2px solid $blue
+.hover-schild:hover
+  color: $light
+  background-color: $blue
+
+.hover-schild-2:hover
+  color: $light
+  background-color: $blue
+.hover-schild-3:hover
+  color: $light
+  background-color: $blue
+.box__title--hover:hover
+  color: $blue
+.card
+  position: relative
+  border-radius: 16px
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, rgba(22, 49, 70, 0.453847) 45.38%, #152532 100%)
+    z-index: -1
+  &__img
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: -2
+    -o-object-fit: cover
+    object-fit: cover
+  &__schild
+    position: absolute
+    background-color: $light
+    font-family: $ff-base
+    font-style: normal
+    letter-spacing: 1px
+    font-weight: 600
+    font-size: 14px
+    line-height: 22px
+    color: $green
+    border-radius: 20px
+    padding: 4px 16px 4px 16px
+    margin-bottom: 16px
+    display: inline-block
+    z-index: 3
+    top: 29px
+    left: 32px
+    bottom: auto
+    right: auto
+    border: 2px solid $light
+  &__title
+    @include subtitle-card
+  &__title-smoll
+    @include subtitle-card
+    font-size: 28px
+    letter-spacing: 0
+    line-height: 54px
+  &__text
+    font-family: $ff-base
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 25px
+    color: $light
+    max-width: 270px
+    display: block
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-autor
+    display: flex
+    &__name
+      color: $light
+    &__verified
+      color: $gray
+    &__right
+      display: flex
+      flex-direction: column
+      margin-left: 12px
+  &__date
+    color: $gray
+.last__card
+  display: flex
+.last-card__link
+  display: flex
+.last-card--hover:hover
+  filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.64))
+  transition-duration: 0.5s
+  transition-timing-function: ease

@@ -5,6 +5,15 @@
   .news-page
     &__background
       min-height: 550px
+  .featured
+    &__box
+      margin-top: -130px
+  .examples
+    &-button
+      &--prew
+        left: 4.5%
+      &--next
+        right: 4.5%
 @media ( max-width:  1200px)
   .container
     width: 90%
@@ -14,10 +23,52 @@
   .news-page
     &__background
       min-height: 550px
+  .popular
+  .bg-top
+    margin-top: -39px
+  .footer
+    padding-top: 0px
+    &__wrapper
+      &-top
+        flex-direction: column
+        align-items: center
+      &-center
+        flex-direction: column
+        align-items: center
+        margin-top: 100px
+      &-bottom
+        flex-direction: column
+    &__subscribe
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-logo
+      order: 1
+      align-items: center
+      margin-right: 0
+      &__text
+        text-align: center
+    &-nav
+
+      margin-bottom: 30px
+      &__list:last-child
+        margin-right: 0
+  .subscribe
+    margin-bottom: 30px
+    &__title
+      text-align: center
+      display: block
+      max-width: 699px
+    &__text
+      text-align: center
+      display: block
+      max-width: 699px
+
 @media ( max-width:  1100px)
   .title-page
     &__background
-      min-height: 500px
+      min-height: 560px
   .box
     &__image
       width: 50%
@@ -25,23 +76,61 @@
     &__background
       min-height: 540px
   .dropdown-content
-    width: 90%
-    top: 65px
-    right: 30%
-    left: 20%
-    margin: auto
-@media ( max-width: 900px )
-  .box
-    flex-direction: column
-    &__image
-      width: 100%
-      height: 350px
-    &__info
-      width: 100%
 
-@media ( max-width: 880px )
-  .container
-    width: 92%
+  .popular
+  .last
+    &__card-wrapper
+      flex-wrap: wrap
+    &__card
+      width: 49%
+      margin-bottom: 20px
+    &__card:last-child
+      width: 100%
+  .everything
+    &-last
+      &__card-wrapper
+        flex-wrap: wrap
+      &__card
+        width: 49%
+        margin-bottom: 20px
+      &__card:last-child
+        width: 100%
+@media ( max-width: 992px )
+  .hover-1:hover
+    color: $light
+    background-color: inherit
+  .hover-menu:hover
+    color: $light
+  .hover-title:hover
+    color: $light
+  .hover-btn:hover
+    color: $light
+    background-color: $blue
+    border: 0px solid $light
+  .hover-btn-2:hover
+    color: $blue
+    background-color: $light
+    border: 2px solid $blue
+  .button-3:hover:after
+    background-image: url(../img/arrow-btn.svg)
+  .hover-schild:hover
+    color: $green
+    background-color: #EBF7F2
+
+  .hover-schild-2:hover
+    color: $green
+    background-color: $light
+  .hover-schild-3:hover
+    color: $blue
+    background-color: #EBF7F2
+
+  .box__title--hover:hover
+    color: $subtitle-color
+  .last-card--hover:hover
+    filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
+    transition-duration: 0
+    transition-timing-function: none
+
   .header
     &-nav
       margin-right: 5px
@@ -54,7 +143,7 @@
         left: 0
         right: 0
         bottom: 0
-        top: 78px
+        top: 76px
         &--active
           display: flex
           flex-direction: column
@@ -72,6 +161,8 @@
       &__link
         &--arrow:after
           top: 9px
+      &__dropdown
+        margin-left: 8px
   .menu-button
     display: flex
     width: 23px
@@ -88,6 +179,32 @@
       height: 2px
       background-color: $light
       border-radius: 1px
+  .button-3
+    margin-top: 25px
+    order: 1
+@media ( max-width: 900px )
+  .box
+    flex-direction: column
+    &__image
+      width: 100%
+      height: 350px
+    &__info
+      width: 100%
+      border-top-left-radius: 0
+      border-top-right-radius: 0
+      border-bottom-right-radius: 16px
+      border-bottom-left-radius: 16px
+  .examples
+    &-button
+      top: 41%
+      &--prew
+        left: 4.5%
+      &--next
+        right: 4.5%
+@media ( max-width: 880px )
+  .container
+    width: 92%
+
   .title-page
     &__wrapper
       padding-top: 100px
@@ -98,6 +215,39 @@
       height: 250px
     &__text
       margin-right: 0px
+  .popular
+
+    &__wrapper
+      justify-content: center
+    &__text
+      text-align: center
+  .h2-title
+    text-align: center
+  .card
+    width: 100%
+    margin-bottom: 16px
+
+  .last
+    &__wrapper
+      justify-content: center
+  .everything
+    &__text
+      text-align: center
+      display: block
+      margin-right: auto
+      margin-left: auto
+  .examples
+    &__wrapper
+      justify-content: center
+  .advertising
+    display: none
+  .footer-nav
+    justify-content: space-between
+    margin-left: 15%
+    &__list
+      min-width: 45%
+      margin-right: 0
+      margin-bottom: 30px
 
 @media ( max-width: 600px )
   .news-page
@@ -106,13 +256,34 @@
   .modal
     &__dialog
       width: 70%
+  .footer
+    &__wrapper
+      &-center
+        margin-top: 80px
+  .subscribe
+    &__title
+      font-size: 24px
+      line-height: 32px
+    &__form
+      width: 100%
+    &__input
+      margin-top: 48px
+      width: 100%
+      height: 48px
+      margin-bottom: 12px
+    &__button
+      min-width: 100%
+      height: 48px
+
 @media ( max-width: 540px )
   body
     font-size: 14px
     line-height: 24px
+  .header-nav__link--arrow-2:after
+    top: 10px
   .title-page
     &__background
-      min-height: 500px
+      min-height: 524px
   .title
     font-size: 32px
   .input
@@ -128,6 +299,9 @@
       transform: none
       left: 15px
     &__button
+      display: block
+      text-align: center
+      line-height: 2.5em
       position: relative
       transform: none
       right: 0
@@ -141,10 +315,12 @@
       margin-bottom: 10px
     &__name
       display: inline-block
-      margin-bottom: 10px
+      margin-bottom: 14px
       margin-right: 10px
+  .featured
+    &__box
+      margin-top: -125px
   .box
-    margin-top: -90px
     &__schild
       text-transform: uppercase
     &__title
@@ -152,6 +328,8 @@
       line-height: 24px
     &__info
       padding: 23px 20px 24px 20px
+    &__text
+      margin-bottom: 24px
   .avatar
     width: 36px
     height: 36px
@@ -178,6 +356,78 @@
     background-position: center
     height: 200px
     top: 267px
+  .popular
+    &__text
+  .h2-title
+    font-size: 24px
+    line-height: 32px
+  .card
+    &__schild
+      left: 20px
+    &__title
+      font-size: 20px
+      line-height: 24px
+  .popular
+    &__card
+      padding-top: 180px
+      padding-left: 20px
+      padding-bottom: 20px
+      padding-right: 20px
+      min-height: 320px
+  .last
+    &__card
+      padding: 162px 20px 20px 20px
+      min-height: 320px
+    &__card
+      &-wrapper
+        margin-top: 7px
+    &__text
+      text-align: center
+      margin-top: 4px
+  .card
+    &__title-smoll
+      font-size: 20px
+      line-height: 24px
+  .everything
+    &-popular
+      &__card
+        padding-top: 180px
+        padding-left: 20px
+        padding-bottom: 20px
+        padding-right: 20px
+        min-height: 320px
+    &-last
+      &__card
+        padding: 162px 20px 20px 20px
+        min-height: 320px
+        &--none
+          display: flex
+          &-smole
+            display: none
+      &__card
+        &-wrapper
+          margin-top: 7px
+      &__text
+        text-align: center
+        margin-top: 4px
+  .examples
+    &-button
+      top: 45%
+      width: 40px
+      height: 40px
+      &--prew
+        left: 3.5%
+      &--next
+        right: 3.5%
+  .footer
+    &-nav
+      margin-left: 9px
+      margin-bottom: 0
+      &__list
+        font-size: 14px
+        min-width: 49%
+      &__company
+        width: 51%
 
 @media ( max-width: 320px )
   .container
@@ -203,23 +453,133 @@
     &__input
       padding-left: 45px
   .featured
-    background-size: 600%
-    top: 380px
     &__box
-      margin-top: 57px
+      margin-top: -226px
+  .bg-bottom
+    margin-top: -159px
   .box
     &__schild
       margin-bottom: 4px
     &__image
-      height: 160px
+      flex-basis: auto
+      height: 159px
     &__info
-      padding: 23px 20px 24px 20px
+      padding: 20px 20px 24px 20px
     &__title
       line-height: 24px
       margin-bottom: 0px
-    &__text
-      margin-bottom: 0px
 
+  .popular
+    padding-top: 48px
+    padding-bottom: 66px
+    &__text
+      font-size: 11px
+      line-height: 22px
+      margin-bottom: 33px
+  .card
+    padding-top: 164px
+    &__title-smoll
+      ine-height: 27px
+    &__schild
+      padding: 1px 6px 1px 6px
+      letter-spacing: 0px
+      top: 20px
+      line-height: 20px
+    &__text
+      font-size: 14px
+      line-height: 21px
+      margin-top: 9px
+
+  .button-3
+    margin-top: 17px
+    height: 40px
+    min-width: 172px
+    padding: 8px 22px 8px 14px
+  .last
+    padding-bottom: 44px
+    &__card
+      padding-top: 160px
+    &__button
+      margin-top: 27px
+  .examples
+    padding-bottom: 42px
+    &__text
+      text-align: center
+    &__swiper
+      margin-top: 9px
+    &-button
+      top: 40%
+      width: 40px
+      height: 40px
+      &--prew
+        left: 2.5%
+      &--next
+        right: 2.5%
+    &__schild
+      font-size: 14px
+      line-height: 20px
+      padding: 4px 13px 4px 13px
+    &__button
+      margin-top: 26px
+  .everything
+    &__title
+      margin-bottom: 12px
+    &__text
+      margin-bottom: 28px
+    &-last
+      &__card-wrapper
+        margin-top: 0px
+    &__bottom
+      margin-top: 0
+  .footer
+    &__subscribe
+      padding-top: 14px
+  .subscribe
+    max-width: 273px
+    align-items: start
+    &__title
+      text-align: left
+      letter-spacing: 0.2px
+      max-width: 200px
+    &__text
+      text-align: left
+      font-size: 14px
+      line-height: 27px
+    &__form
+      margin-bottom: 0
+    &__input
+      margin-top: 9px
+  .footer
+    &__wrapper-center
+      margin-top: 55px
+    &-nav
+      &__list
+        margin-bottom: 24px
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
+      &__link
+        margin-bottom: 13px
+    &-logo
+      margin-top: -12px
+      max-width: 100%
+      &__link
+        margin-bottom: 9px
+      &__img
+        width: 77px
+      &__text
+        font-size: 14px
+        line-height: 28px
+        margin-bottom: 22px
+      &__social-wrapper
+        margin-left: 9%
+      &__social-link
+        margin-right: 24px
+      &__social-link:nth-child(1)
+        margin-right: 18px
+      &__social-link:nth-child(1)
+        margin-right: 18px
 @media ( max-height: 500px )
   .header
     &__navbar

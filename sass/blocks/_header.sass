@@ -10,7 +10,6 @@
     padding-top: 26px
     padding-bottom: 26px
     align-items: start
-
   &__navbar
     &-top
       display: flex
@@ -33,6 +32,7 @@
       font-weight: 600
       font-size: 16px
       line-height: 22px
+      cursor: pointer
       &--arrow:after
         position: relative
         content: ''
@@ -43,10 +43,19 @@
         width: 9px
         float: right
         top: 14px
+      &--arrow-2:after
+        position: relative
+        content: ''
+        background-image: url(../img/arrow-nav.svg)
+        background-repeat: no-repeat
+        display: block
+        height: 16px
+        width: 9px
+        float: right
+        top: 16px
         //margin-top: 7px
-
-        //&-active:after
-          //background-image: url(../img/arrow-nav_top.svg)
+      &--arrow:hover:after
+        background-image: url(../img/arrow-nav_blue.svg)
 .dropdown
   &--active
     display: block
@@ -59,20 +68,21 @@
     color: $light
 .menu-button
   display: none
-.dropdown .dropbtn
+.dropdown
   border: none
   outline: none
   background-color: inherit
   color: $light
+  position: relative
+  display: inline-block
 .dropdown-content
+  padding: 10px
   display: none
   position: absolute
   z-index: 1
-  width: 80%
-  top: 65px
-  right: 30%
-  left: 30%
-  margin: auto
+  width: 110px
+  top: 30px
+  left: -10px
   &:hover
     //background-color: #ddd
 
@@ -84,14 +94,12 @@
   display: block
 .dropdown-content
   &__link
+    display: block
     color: $light
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 20px
     text-align: center
-    border: 1px solid $light
-    border-radius: 4px
-    padding: 4px 17px 4px 17px
-    margin-right: 16px
-    white-space: nowrap
+    white-space: nowraps
+    margin-bottom: 10px

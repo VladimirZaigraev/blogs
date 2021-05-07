@@ -55,9 +55,20 @@ var scrolled;
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
   if (scrolled > 100) {
-    $(".header").css({ background: "#183B56" });
+    $(".header,.dropdown-content").css({ background: "#183B56" });
   }
   if (100 > scrolled) {
-    $(".header").css({ background: "" });
+    $(".header, .dropdown-content").css({ background: "" });
   }
 };
+
+const swiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".examples-button--next",
+    prevEl: ".examples-button--prew",
+  },
+});
