@@ -62,7 +62,7 @@ window.onscroll = function () {
   }
 };
 
-const swiper = new Swiper(".swiper-container", {
+const examplesSwiper = new Swiper(".examples-swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -70,5 +70,16 @@ const swiper = new Swiper(".swiper-container", {
   navigation: {
     nextEl: ".examples-button--next",
     prevEl: ".examples-button--prew",
+  },
+});
+
+const articleSwiper = new Swiper(".article-swiper__container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".article-button--next",
+    prevEl: ".article-button--prew",
   },
 });
