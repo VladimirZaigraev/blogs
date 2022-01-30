@@ -14,18 +14,6 @@
         left: 4.5%
       &--next
         right: 4.5%
-@media ( max-width:  1200px)
-  .container
-    width: 90%
-  .title-page
-    &__background
-      min-height: 600px
-  .news-page
-    &__background
-      min-height: 550px
-  .popular
-  .bg-top
-    margin-top: -39px
   .footer
     padding-top: 0px
     &__wrapper
@@ -50,7 +38,6 @@
       &__text
         text-align: center
     &-nav
-
       margin-bottom: 30px
       &__list:last-child
         margin-right: 0
@@ -64,7 +51,59 @@
       text-align: center
       display: block
       max-width: 699px
+  .footer
+    &__container
+      width: 90%
+      margin-left: 0
+    &__subscribe
+      padding-left: 0
+  .subscribe
+    &__form
+      flex-wrap: wrap
 
+      width: 320px
+    &__input
+      width: 320px
+      display: flex
+      margin-top: 38px
+
+    &__box
+      width: 320px
+    &__button
+      width: 320px
+
+@media ( max-width:  1200px)
+  .container
+    width: 90%
+
+  .title-page
+    &__background
+      min-height: 600px
+  .news-page
+    &__background
+      min-height: 550px
+  .popular
+  .bg-top
+    margin-top: -39px
+
+  .article
+    &__wrapper
+      display: flex
+      flex-direction: column
+      max-width: 750px
+      margin: auto
+  .share
+    order: 1
+    position: relative
+    flex-direction: row
+    left: 0
+    margin-top: 78px
+    &__text
+      margin-bottom: 0
+      margin-right: 24px
+    &__img
+      margin-bottom: 0
+      margin-right: 24px
 @media ( max-width:  1100px)
   .title-page
     &__background
@@ -74,7 +113,7 @@
       width: 50%
   .news-page
     &__background
-      min-height: 540px
+      min-height: 480px
   .dropdown-content
 
   .popular
@@ -95,6 +134,14 @@
         margin-bottom: 20px
       &__card:last-child
         width: 100%
+  .news-bottom
+    margin-top: -101px
+    background-size: 180%
+  .article-swiper
+    position: relative
+    max-width: 100%
+  .bg-top
+    background-size: 200%
 @media ( max-width: 992px )
   .hover-1:hover
     color: $light
@@ -130,7 +177,20 @@
     filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
     transition-duration: 0
     transition-timing-function: none
+  .hover
+    &-prew:hover
+      background-color: $blue
+      background-image: url(../img/arrow-prew.svg)
+      background-size: 14px
+    &-next:hover
+      background-color: $blue
+      background-image: url(../img/arrow-next.svg)
+      background-size: 14px
 
+  .go-top
+    ::hover
+      background-image: url(../img/arrow-btn-top.svg)
+      background-color: #1565D8
   .header
     &-nav
       margin-right: 5px
@@ -182,6 +242,13 @@
   .button-3
     margin-top: 25px
     order: 1
+  .article
+    &-button
+      &--next
+        right: -10px
+      &--prew
+        left: -10px
+
 @media ( max-width: 900px )
   .box
     flex-direction: column
@@ -226,7 +293,8 @@
   .card
     width: 100%
     margin-bottom: 16px
-
+  .article__title
+    text-align: left
   .last
     &__wrapper
       justify-content: center
@@ -239,6 +307,8 @@
   .examples
     &__wrapper
       justify-content: center
+    &-button
+      top: 55%
   .advertising
     display: none
   .footer-nav
@@ -248,7 +318,17 @@
       min-width: 45%
       margin-right: 0
       margin-bottom: 30px
-
+  .bg-top
+    height: 146px
+    background-size: 350%
+    margin-top: -8px
+  .comments
+    &__title
+      text-align: left
+    &__text
+      max-width: 70%
+    &__container
+      max-width: 95%
 @media ( max-width: 600px )
   .news-page
     &__background
@@ -256,6 +336,9 @@
   .modal
     &__dialog
       width: 70%
+  .examples
+    &-button
+      top: 40%
   .footer
     &__wrapper
       &-center
@@ -264,16 +347,18 @@
     &__title
       font-size: 24px
       line-height: 32px
-    &__form
-      width: 100%
     &__input
       margin-top: 48px
       width: 100%
       height: 48px
       margin-bottom: 12px
     &__button
-      min-width: 100%
+      width: 100%
       height: 48px
+      font-size: 16px
+  .news-bottom
+    margin-top: -70px
+    background-size: 200%
 
 @media ( max-width: 540px )
   body
@@ -354,10 +439,9 @@
       text-align: center
       letter-spacing: 0.2px
   .news-bottom
-    background-size: 400%
-    background-position: center
+
     height: 200px
-    top: 267px
+
   .popular
     &__text
   .h2-title
@@ -414,7 +498,7 @@
         margin-top: 4px
   .examples
     &-button
-      top: 45%
+      top: 41%
       width: 40px
       height: 40px
       &--prew
@@ -430,10 +514,84 @@
         min-width: 49%
       &__company
         width: 51%
+  .bg-top
+    height: 146px
+    background-size: 375%
+  .article
+    &__preview
+      font-size: 16px
+    &-info
+      &__publis
+        display: none
+    &-quote
+      &__box
+        padding: 124px 24px 80px 24px
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 23px
+        line-height: 30px
+    &-photo
+      &__collage
+        flex-direction: column
+        height: 317px
+      &__box
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 12px
+      &__img
+      &__wrapper
+        height: 200px
+    &-button
+      &--next
+        right: -10px
+        width: 40px
+        height: 40px
+      &--prew
+        left: -10px
+        height: 40px
+        width: 40px
+  .article-photo__box .article-photo__img:nth-child(2)
+    margin-top: 0
+    margin-left: 12px
+    height: 100%
+  .article-photo__box:first-child
+    width: 100%
+    height: 176px
+  .article-photo__box:last-child
+    height: 100px
+    width: 100%
+    .article-photo__img
+      width: 47%
 
+  .article-photo__collage:first-child
+
+    margin-right: 0
+  .comments
+    &__box
+      flex-direction: column
+    &__text
+      max-width: 100%
+    &__info
+      margin-bottom: 16px
+    &__message
+      padding: 20px 20px 20px 68px
+    &__button
+      position: relative
+      left: 0
+      top: 0
+  .modal
+    &__dialog
+      width: 90%
+    &__box
+      height: 100px
 @media ( max-width: 320px )
   .container
     max-width: 288px
+  .footer
+    &__container
+      width: 94%
   .header
     &__wrapper
       padding-top: 15px
@@ -533,6 +691,10 @@
         margin-top: 0px
     &__bottom
       margin-top: 0
+  .bg-top
+    height: 146px
+    background-size: 500%
+    margin-top: -9px
   .footer
     &__subscribe
       padding-top: 14px
@@ -551,6 +713,9 @@
       margin-bottom: 0
     &__input
       margin-top: 9px
+    &__box
+      margin-top: 0
+      width: 100%
   .footer
     &__wrapper-center
       margin-top: 55px
@@ -565,6 +730,7 @@
         margin-bottom: 13px
     &-logo
       margin-top: -12px
+      margin-bottom: 78px
       max-width: 100%
       &__link
         margin-bottom: 9px
@@ -582,10 +748,149 @@
         margin-right: 18px
       &__social-link:nth-child(1)
         margin-right: 18px
+  .news
+    &-page
+      &__wrapper
+        padding-top: 102px
+      &__background
+        min-height: 362px
+    &-bottom
+      display: none
+  .article
+    margin-top: 0
+    padding-top: 39px
+    position: relative
+    &__container
+      max-width: 272px
+    &__title
+      font-size: 21px
+      line-height: 32px
+      letter-spacing: 0.2px
+      margin-bottom: 17px
+    &__preview
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 41px
+    &__text
+
+      font-size: 12px
+      line-height: 22px
+      letter-spacing: 0px
+
+    &-info
+      &__date
+        font-size: 10px
+        line-height: 14px
+      &--top
+        margin-bottom: 33px
+      &--bottom
+        padding-top: 16px
+        padding-bottom: 16px
+        margin-top: 23px
+    &-photo
+      &--mb
+        padding-bottom: 32px
+      &__text
+        font-size: 12px
+        line-height: 16px
+    &__title-smoll
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: -0.15px
+      margin-top: 23px
+    &-swiper
+      padding-top: 0
+      margin-bottom: 20px
+      margin-top: 32px
+    &-button
+      top: 49%
+    &-quote
+      margin-top: 79px
+
+      margin-bottom: 64px
+      &__box
+        border-radius: 0px
+        width: 118%
+        padding-bottom: 78px
+        &::after
+          top: 57px
+        &::before
+          background-size: cover
+          top: -179px
+          right: -265px
+          width: 374px
+          height: 374px
+          left: auto
+      &__title
+        font-size: 23px
+        line-height: 30px
+        text-align: center
+        letter-spacing: 1px
+        margin-bottom: 41px
+      &__text
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+      &__avatar
+        width: 100px
+        height: 100px
+        margin-top: -56px
+    &-photo__collage
+      margin-top: 90px
+      justify-content: flex-start
+      height: 299px
+
+  .share
+    margin-top: 73px
+    align-items: flex-start
+    &__text
+      font-size: 14px
+      line-height: 20px
+      margin-left: 5px
+    &__img
+      margin-right: 28px
+  .comments
+    padding-top: 25px
+    padding-bottom: 16px
+    &__container
+      max-width: 272px
+    &__box
+      margin-top: 23px
+    &__date
+      font-size: 12px
+      line-height: 18px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      padding: 16px
+
+    &__message
+      margin-top: 15px
+    &__button
+      padding: 12px 19px 10px 19px
+      margin-top: 4px
+    &__textarea
+
+      margin-top: 15px
+  .textarea__avatar
+    left: 16px
+    top: 37px
+  textarea::placeholder
+    font-size: 14px
+    line-height: 20px
+  .footer__wrapper-bottom
+    display: none
+  .subscribe
+    &__form
+      width: 100%
+    &__box
+
 @media ( max-height: 500px )
   .header
     &__navbar
       &-bottom
         &--active
           overflow: auto
-          height: 80%
+          //height: 90%

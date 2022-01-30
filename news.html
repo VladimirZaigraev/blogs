@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ehya:Отдел новостей</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
-
   <body>
     <header id="#header" class="header">
       <div class="container">
@@ -31,7 +31,9 @@
             <nav class="header__nav header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item">
-                  <a href="#" class="header-nav__link hover-menu">Домой</a>
+                  <a href="index.html" class="header-nav__link hover-menu"
+                    >Домой</a
+                  >
                 </li>
                 <li class="header-nav__item">
                   <div class="header-nav__dropdown dropdown">
@@ -79,7 +81,9 @@
                   </div>
                 </li>
                 <li class="header-nav__item">
-                  <a href="#" class="header-nav__link hover-menu">Помощь</a>
+                  <a href="#anchor1" class="header-nav__link hover-menu"
+                    >Помощь</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -188,12 +192,38 @@
     </section>
     <!-- /.title-page -->
     <section class="news-bottom">
-      <div class="container"></div>
+      <h6 class="news-bottom__title">t</h6>
       <!-- /.container -->
     </section>
     <section class="article">
-      <div class="container">
-        <div class="share"></div>
+      <div class="container article__wrapper">
+        <div class="share">
+          <span class="share__text">Share</span>
+          <a href="https://twitter.com/" class="share__link" target="_blank"
+            ><img
+              src="img/twitter_gray.svg"
+              alt="logo:twitter"
+              class="share__img"
+          /></a>
+          <a href="https://facebook.com/" class="share__link" target="_blank"
+            ><img
+              src="img/facebook_gray.svg"
+              alt="logo:facebook"
+              class="share__img"
+          /></a>
+          <a href="https://linkedin.com/" class="share__link" target="_blank"
+            ><img
+              src="img/linkedin_gray.svg"
+              alt="logo:linkedin"
+              class="share__img"
+          /></a>
+          <a href="https://instagram.com/" class="share__link" target="_blank"
+            ><img
+              src="img/instagram_gray.svg"
+              alt="logo:instagram"
+              class="share__img"
+          /></a>
+        </div>
         <!-- /.share -->
         <div class="article__container">
           <span class="article__preview">
@@ -218,10 +248,14 @@
               </div>
             </div>
             <!-- /.box__autor -->
-            <span class="article-info__date">PUBLISHED ON MAY, 2 2019</span>
+            <div class="article-info__text">
+              <span class="article-info__publis">PUBLISHED ON</span>
+              <span class="article-info__date">MAY, 2 2019</span>
+            </div>
+            <!-- /.article-info__text -->
           </div>
           <!-- /.article__info -->
-          <div class="article__photo article-photo">
+          <div class="article__photo article-photo article-photo--mb">
             <div class="article-photo__wrapper">
               <img
                 src="img/photo-1-min.jpg"
@@ -337,8 +371,12 @@
               <!-- /.article__photo -->
             </div>
           </div>
-          <button class="article-button article-button--prew"></button>
-          <button class="article-button article-button--next"></button>
+          <button
+            class="article-button article-button--prew hover-prew"
+          ></button>
+          <button
+            class="article-button article-button--next hover-next"
+          ></button>
         </div>
         <!-- /.article__swiper -->
         <div class="article__container">
@@ -378,9 +416,9 @@
           <div class="article__quote article-quote">
             <div class="article-quote__box">
               <h2 class="article-quote__title">
-                Многие люди сказали бы, что это абсолютное безумие продолжать
+                "Многие люди сказали бы, что это абсолютное безумие продолжать
                 делать одно и то же, раз за разом, ожидая получить другой
-                результат или что-то другое случится.
+                результат или что-то другое случится."
               </h2>
               <span class="article-quote__text"
                 >Даниэль принимает гостей в Джокьякарте, чтобы заработать
@@ -450,28 +488,33 @@
             Гилкриз, заповедник для наблюдения за птицами Хендерсон и Mt.
             Чарльстон, но я думаю, вы поняли.
           </p>
-          <div class="article__info article-info article-info--bottom">
-            <div class="article-info__box-autor box-autor">
-              <img
-                src="img/ava_1.jpg"
-                alt="avatar"
-                class="box-autor__avatar avatar"
-              />
-              <div class="box-autor__right">
-                <span class="box-autor__name name">Viola Manisa</span>
-                <span class="box-autor__verified verified">
-                  Verified writer
-                </span>
-              </div>
-            </div>
-            <!-- /.box__autor -->
-            <span class="article-info__date">PUBLISHED ON MAY, 2 2019</span>
-          </div>
-          <!-- /.article__info -->
         </div>
-        <!-- /.article__container -->
       </div>
       <!-- /.container -->
+      <div class="container article__container">
+        <div class="article__info article-info article-info--bottom">
+          <div class="article-info__box-autor box-autor">
+            <img
+              src="img/ava_1.jpg"
+              alt="avatar"
+              class="box-autor__avatar avatar"
+            />
+            <div class="box-autor__right">
+              <span class="box-autor__name name">Viola Manisa</span>
+              <span class="box-autor__verified verified">
+                Verified writer
+              </span>
+            </div>
+          </div>
+          <!-- /.box__autor -->
+          <div class="article-info__text">
+            <span class="article-info__publis">PUBLISHED ON</span>
+            <span class="article-info__date">MAY, 2 2019</span>
+          </div>
+          <!-- /.article-info__text -->
+        </div>
+      </div>
+      <!-- /.article__container -->
     </section>
     <!-- /.article -->
     <section class="comments">
@@ -480,10 +523,10 @@
         <div class="comments__wrapper">
           <div class="comments__box">
             <div class="comments__autor">
-              <img src="" alt="" class="comments__avatar" />
+              <img src="img/ava_7.jpg" alt="" class="comments__avatar avatar" />
               <div class="comments__info">
-                <span class="comments__autor-name">Alexis Ren</span>
-                <span class="comments__date">02 May</span>
+                <span class="comments__autor-name name">Alexis Ren</span>
+                <span class="comments__date date">02 May</span>
               </div>
               <!-- /.comments__info -->
             </div>
@@ -496,10 +539,10 @@
           <!-- /.comments__box -->
           <div class="comments__box">
             <div class="comments__autor">
-              <img src="" alt="" class="comments__avatar" />
+              <img src="img/ava_8.jpg" alt="" class="comments__avatar avatar" />
               <div class="comments__info">
-                <span class="comments__autor-name">Elsie Scott</span>
-                <span class="comments__date">02 May</span>
+                <span class="comments__autor-name name">Elsie Scott</span>
+                <span class="comments__date date">02 May</span>
               </div>
               <!-- /.comments__info -->
             </div>
@@ -509,14 +552,20 @@
             >
           </div>
           <!-- /.comments__box -->
-          <div class="comments__textarea">
-            <img src="" alt="" class="comments__avatar" />
+          <div class="comments__textarea textarea">
+            <img
+              src="img/ava_8.jpg"
+              alt="avatar"
+              class="comments__avatar textarea__avatar avatar"
+            />
             <textarea
               class="comments__message"
               placeholder="Написать комментарий..."
               name="comment"
             ></textarea>
-            <button class="comments__button">Комментировать</button>
+            <button class="comments__button button-2 hover-btn">
+              Комментировать
+            </button>
           </div>
           <!-- /.comments__textarea -->
         </div>
@@ -525,26 +574,34 @@
       <!-- /.container -->
     </section>
     <!-- /.comment -->
-    <section class="bg-top"></section>
+    <section class="bg-top">
+      <h6 class="bg-top__title">t</h6>
+    </section>
     <!-- /.bg-top -->
+    <a id="anchor1"></a>
+    <a href="#" id="Go_Top" class="go-top"> </a>
     <section class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__wrapper-top">
           <div class="footer__subscribe subscribe">
             <h3 class="subscribe__title">
               Получите наши истории на ваш почтовый ящик еженедельно.
             </h3>
             <form action="send.php" method="POST" class="subscribe__form">
-              <input
-                type="email"
-                class="input subscribe__input"
-                placeholder="Ваш Email"
-                name="email"
-                required
-              />
-              <button class="subscribe__button button-2 hover-btn">
-                Начать
-              </button>
+              <div class="subscribe__box">
+                <input
+                  type="email"
+                  class="input subscribe__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="subscribe__box">
+                <button class="subscribe__button button-2 hover-btn">
+                  Начать
+                </button>
+              </div>
             </form>
             <div class="subscribe__text">
               Получите ответ завтра, если отправите его до 9 вечера сегодня.
@@ -736,40 +793,47 @@
       <!-- /.container -->
     </section>
     <!-- /.footer -->
-    <div class="modal">
-      <div class="modal__overlay"></div>
+
+    <div class="modal-container modal">
+      <div class="modal__overlay" id="modal_ctnr"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+      <div class="modal__dialog" id="mod">
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <img class="modal__logo" src="img/Logo.svg" alt="logo" />
         <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Фамилия Имя*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="phone input modal__input"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-            minlength="18"
-            id="phone2"
-          />
+          <div class="modal__box">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Фамилия Имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__box">
+            <input
+              type="tel"
+              class="phone input modal__input"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="18"
+              id="phone2"
+            />
+          </div>
+          <div class="modal__box">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
 
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
           <textarea
             class="message input modal__message"
             placeholder="Сообщение"
@@ -787,6 +851,8 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ehya:Отдел новостей</title>
-  </head>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
-    rel="stylesheet"
-  />
 
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
   <body>
     <header id="#header" class="header">
       <div class="container">
@@ -30,7 +31,9 @@
             <nav class="header__nav header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item">
-                  <a href="#" class="header-nav__link hover-menu">Домой</a>
+                  <a href="index.html" class="header-nav__link hover-menu"
+                    >Домой</a
+                  >
                 </li>
                 <li class="header-nav__item">
                   <div class="header-nav__dropdown dropdown">
@@ -78,7 +81,9 @@
                   </div>
                 </li>
                 <li class="header-nav__item">
-                  <a href="#" class="header-nav__link hover-menu">Помощь</a>
+                  <a href="#anchor1" class="header-nav__link hover-menu"
+                    >Помощь</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -157,7 +162,7 @@
                 <!-- /.header-nav__drop-down -->
               </li>
               <li class="header-nav__item">
-                <a href="#" class="header-nav__link">Помощь</a>
+                <a href="#" id="Go_Bottom" class="header-nav__link">Помощь</a>
               </li>
             </ul>
           </nav>
@@ -188,7 +193,9 @@
                 alt="icon: search"
                 class="search__img"
               />
-              <a href="news.html"class="search__button button-2 hover-btn">Поиск</a>
+              <a href="news.html" class="search__button button-2 hover-btn"
+                >Поиск</a
+              >
             </form>
             <div class="title-page__tags tags">
               <span class="tags__popular">Популярные Тэги :</span>
@@ -206,15 +213,16 @@
       <!-- /.title-page__background -->
     </section>
     <!-- /.title-page -->
-    <section class="bg-bottom"></section>
+    <section class="bg-bottom">
+      <h6 class="bg-bottom__title">t</h6>
+    </section>
     <section class="featured">
       <div class="container">
         <div class="featured__box box">
           <img src="img/offer.png" alt="image" class="box__image" />
           <div class="box__info">
-            <a href="#" class="box__schild hover-schild">
-              Предложения</a>
-            </span>
+            <a href="#" class="box__schild hover-schild"> Предложения</a>
+
             <h3 class="box__title box__title--hover">
               <a href="news.html"
                 >Дешевые Авиабилеты - Отличный Способ Сэкономить</a
@@ -257,12 +265,11 @@
             >Мы делимся общими тенденциями, стратегическими идеями, мнениями,
             короткими и длинными историями команды, стоящей за компанией.</span
           >
-          <a href="news.html"  class="button-3 hover-btn-2">Смотреть все</a>
+          <a href="news.html" class="button-3 hover-btn-2">Смотреть все</a>
           <div class="popular__card-wrapper">
             <div class="popular__card popular-card card">
               <img src="img/Image-1.jpg" alt="img" class="card__img" />
-              <a href="#" class="card__schild hover-schild-2"
-                >ПРЕДЛОЖЕНИЯ</a>
+              <a href="#" class="card__schild hover-schild-2">ПРЕДЛОЖЕНИЯ</a>
               <h3 class="popular-card__title card__title hover-title">
                 <a href="news.html">Как защитить свою семью от угарного газа</a>
               </h3>
@@ -288,8 +295,7 @@
             <!-- /.card -->
             <div class="popular__card popular-card card">
               <img src="img/Image-2.jpg" alt="img" class="card__img" />
-              <a href="#"class="card__schild hover-schild-2"
-                >ПРЕДЛОЖЕНИЯ</a>
+              <a href="#" class="card__schild hover-schild-2">ПРЕДЛОЖЕНИЯ</a>
               <h3 class="card__title hover hover-title">
                 <a href="news.html"
                   >Материнство - самая трудная и лучшая работа на свете</a
@@ -334,21 +340,30 @@
             Смотреть все
           </a>
           <div class="last__card-wrapper">
-            
             <div class="last__card last-card last-card--hover card">
               <a href="news.html" class="last-card__link"></a>
-              <img src="img/Image-3.jpg" alt="img" class="last__img card__img" />
+              <img
+                src="img/Image-3.jpg"
+                alt="img"
+                class="last__img card__img"
+              />
               <div class="last-card__text-wrapper">
                 <h3 class="last-card__title-smoll card__title-smoll hover">
                   <a href="news.html">Будущее Работы </a>
                 </h3>
-                <span class="card__text">Большинство людей будут работать на рабочих местах, которых
-                  сегодня не существует.</span>
+                <span class="card__text"
+                  >Большинство людей будут работать на рабочих местах, которых
+                  сегодня не существует.</span
+                >
               </div>
               <!-- /.last-card__text-wrapper -->
               <div class="card__bottom">
                 <div class="card__autor card-autor">
-                  <img src="img/ava_3.jpg" alt="avatar" class="card-autor__avatar avatar" />
+                  <img
+                    src="img/ava_3.jpg"
+                    alt="avatar"
+                    class="card-autor__avatar avatar"
+                  />
                   <div class="card-autor__right">
                     <span class="card-autor__name name">Lina Hicks</span>
                     <span class="card-autor__verified verified">
@@ -362,7 +377,7 @@
               <!-- /.card__bottom -->
             </div>
             <!-- /.card -->
-            
+
             <div class="last__card last-card last-card--hover card">
               <a href="news.html" class="last-card__link"></a>
               <img
@@ -449,109 +464,142 @@
       <div class="container">
         <h2 class="examples__title h2-title">Примеры из практики</h2>
         <div class="examples__wrapper">
-        <span class="examples__text">Вот чем мы занимались в последнее время.</span>
-        <a href="news.html" class="examples__button button-3 hover-btn-2">
-          Смотреть все
-        </a>
-        <div class="examples__swiper swiper-container examples-swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide examples__box box">
-              <img src="img/Image-11.jpg" alt="image" class="box__image" />
-              <div class="box__info">
-                <a href="#" class="box__schild examples__schild hover-schild-3">
-                  Предложения</a>
-                </span>
-                <h3 class="box__title box__title--hover">
-                  <a href="news.html">Дешевые Авиабилеты - Отличный Способ Сэкономить</a>
-                </h3>
-                <span class="box__text">В этом цифровом поколении, где информацию можно легко получить за
-                  секунды, визитки ...
-                </span>
-                <div class="box__bottom">
-                  <div class="box__autor box-autor">
-                    <img src="img/ava_1.jpg" alt="avatar" class="box-autor__avatar avatar" />
-                    <div class="box-autor__right">
-                      <span class="box-autor__name name">Viola Manisa</span>
-                      <span class="box-autor__verified verified">
-                        Verified writer
-                      </span>
+          <span class="examples__text"
+            >Вот чем мы занимались в последнее время.</span
+          >
+          <a href="news.html" class="examples__button button-3 hover-btn-2">
+            Смотреть все
+          </a>
+          <div class="examples__swiper swiper-container examples-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide examples__box box">
+                <img src="img/Image-11.jpg" alt="image" class="box__image" />
+                <div class="box__info">
+                  <a
+                    href="#"
+                    class="box__schild examples__schild hover-schild-3"
+                  >
+                    Предложения</a
+                  >
+
+                  <h3 class="box__title box__title--hover">
+                    <a href="news.html"
+                      >Дешевые Авиабилеты - Отличный Способ Сэкономить</a
+                    >
+                  </h3>
+                  <span class="box__text"
+                    >В этом цифровом поколении, где информацию можно легко
+                    получить за секунды, визитки ...
+                  </span>
+                  <div class="box__bottom">
+                    <div class="box__autor box-autor">
+                      <img
+                        src="img/ava_1.jpg"
+                        alt="avatar"
+                        class="box-autor__avatar avatar"
+                      />
+                      <div class="box-autor__right">
+                        <span class="box-autor__name name">Viola Manisa</span>
+                        <span class="box-autor__verified verified">
+                          Verified writer
+                        </span>
+                      </div>
                     </div>
+                    <!-- /.box__autor -->
+                    <span class="box__date date">02 May</span>
                   </div>
-                  <!-- /.box__autor -->
-                  <span class="box__date date">02 May</span>
                 </div>
+                <!-- /.box__info -->
               </div>
-              <!-- /.box__info -->
-            </div>
-            <div class="swiper-slide examples__box box">
-              <img src="img/offer.jpg" alt="image" class="box__image" />
-              <div class="box__info">
-                <a href="#" class="box__schild examples__schild hover-schild-3">
-                  Предложения</a>
-                </span>
-                <h3 class="box__title box__title--hover">
-                  <a href="news.html">Дешевые Авиабилеты - Отличный Способ Сэкономить</a>
-                </h3>
-                <span class="box__text">В этом цифровом поколении, где информацию можно легко получить за
-                  секунды, визитки ...
-                </span>
-                <div class="box__bottom">
-                  <div class="box__autor box-autor">
-                    <img src="img/ava_1.jpg" alt="avatar" class="box-autor__avatar avatar" />
-                    <div class="box-autor__right">
-                      <span class="box-autor__name name">Viola Manisa</span>
-                      <span class="box-autor__verified verified">
-                        Verified writer
-                      </span>
+              <div class="swiper-slide examples__box box">
+                <img src="img/offer.jpg" alt="image" class="box__image" />
+                <div class="box__info">
+                  <a
+                    href="#"
+                    class="box__schild examples__schild hover-schild-3"
+                  >
+                    Предложения</a
+                  >
+
+                  <h3 class="box__title box__title--hover">
+                    <a href="news.html"
+                      >Дешевые Авиабилеты - Отличный Способ Сэкономить</a
+                    >
+                  </h3>
+                  <span class="box__text"
+                    >В этом цифровом поколении, где информацию можно легко
+                    получить за секунды, визитки ...
+                  </span>
+                  <div class="box__bottom">
+                    <div class="box__autor box-autor">
+                      <img
+                        src="img/ava_1.jpg"
+                        alt="avatar"
+                        class="box-autor__avatar avatar"
+                      />
+                      <div class="box-autor__right">
+                        <span class="box-autor__name name">Viola Manisa</span>
+                        <span class="box-autor__verified verified">
+                          Verified writer
+                        </span>
+                      </div>
                     </div>
+                    <!-- /.box__autor -->
+                    <span class="box__date date">02 May</span>
                   </div>
-                  <!-- /.box__autor -->
-                  <span class="box__date date">02 May</span>
                 </div>
+                <!-- /.box__info -->
               </div>
-              <!-- /.box__info -->
-            </div>
-            <div class="swiper-slide examples__box box">
-              <img src="img/offer.jpg" alt="image" class="box__image" />
-              <div class="box__info">
-                <a href="#" class="box__schild examples__schild hover-schild-3">
-                  Предложения</a>
-                </span>
-                <h3 class="box__title box__title--hover">
-                  <a href="news.html">Дешевые Авиабилеты - Отличный Способ Сэкономить</a>
-                </h3>
-                <span class="box__text">В этом цифровом поколении, где информацию можно легко получить за
-                  секунды, визитки ...
-                </span>
-                <div class="box__bottom">
-                  <div class="box__autor box-autor">
-                    <img src="img/ava_4.jpg" alt="avatar" class="box-autor__avatar avatar" />
-                    <div class="box-autor__right">
-                      <span class="box-autor__name name">Viola Manisa</span>
-                      <span class="box-autor__verified verified">
-                        Verified writer
-                      </span>
+              <div class="swiper-slide examples__box box">
+                <img src="img/offer.jpg" alt="image" class="box__image" />
+                <div class="box__info">
+                  <a
+                    href="#"
+                    class="box__schild examples__schild hover-schild-3"
+                  >
+                    Предложения</a
+                  >
+
+                  <h3 class="box__title box__title--hover">
+                    <a href="news.html"
+                      >Дешевые Авиабилеты - Отличный Способ Сэкономить</a
+                    >
+                  </h3>
+                  <span class="box__text"
+                    >В этом цифровом поколении, где информацию можно легко
+                    получить за секунды, визитки ...
+                  </span>
+                  <div class="box__bottom">
+                    <div class="box__autor box-autor">
+                      <img
+                        src="img/ava_4.jpg"
+                        alt="avatar"
+                        class="box-autor__avatar avatar"
+                      />
+                      <div class="box-autor__right">
+                        <span class="box-autor__name name">Viola Manisa</span>
+                        <span class="box-autor__verified verified">
+                          Verified writer
+                        </span>
+                      </div>
                     </div>
+                    <!-- /.box__autor -->
+                    <span class="box__date date">02 May</span>
                   </div>
-                  <!-- /.box__autor -->
-                  <span class="box__date date">02 May</span>
                 </div>
+                <!-- /.box__info -->
               </div>
-              <!-- /.box__info -->
             </div>
+            <!-- If we need navigation buttons -->
           </div>
-          <!-- If we need navigation buttons -->
-          
-        </div>
         </div>
         <!-- /.examples__wrapper -->
-
       </div>
       <!-- /.container -->
-      <button class="examples-button examples-button--prew"></button>
-      <button class="examples-button examples-button--next"></button>
+      <button class="examples-button examples-button--prew hover-prew"></button>
+      <button class="examples-button examples-button--next hover-next"></button>
     </section>
     <!-- /.examples -->
     <section class="everything">
@@ -566,9 +614,8 @@
             <div class="everything-popular__card-wrapper">
               <div class="everything-popular__card popular-card card">
                 <img src="img/Image-6.jpg" alt="img" class="card__img" />
-                <a href="#" class="card__schild hover-schild-2"
-                  >ПРЕДЛОЖЕНИЯ</a>
-                
+                <a href="#" class="card__schild hover-schild-2">ПРЕДЛОЖЕНИЯ</a>
+
                 <h3 class="popular-card__title card__title hover-title">
                   <a href="news.html"
                     >Как защитить свою семью от угарного газа</a
@@ -596,8 +643,7 @@
               <!-- /.card -->
               <div class="everything-popular__card popular-card card">
                 <img src="img/Image-7.jpg" alt="img" class="card__img" />
-                <a href="#" class="card__schild hover-schild-2"
-                  >ПРЕДЛОЖЕНИЯ</a>
+                <a href="#" class="card__schild hover-schild-2">ПРЕДЛОЖЕНИЯ</a>
                 <h3 class="card__title hover hover-title">
                   <a href="news.html"
                     >Материнство - самая трудная и лучшая работа на свете</a
@@ -628,12 +674,14 @@
           </div>
           <div class="everything__last everything-last">
             <div class="everything-last__card-wrapper">
-              <div class="everything-last__card last-card last-card--hover card">
+              <div
+                class="everything-last__card last-card last-card--hover card"
+              >
                 <a href="news.html" class="last-card__link"></a>
                 <img src="img/Image-8.jpg" alt="img" class="card__img" />
                 <div class="last-card__text-wrapper">
                   <h3 class="last-card__title-smoll card__title-smoll hover">
-                    Будущее Работы 
+                    Будущее Работы
                   </h3>
                   <span class="card__text"
                     >Большинство людей будут работать на рабочих местах, которых
@@ -664,11 +712,11 @@
               <div
                 class="everything-last__card everything-last__card--none last-card card"
               >
-              <a href="news.html" class="last-card__link"></a>
+                <a href="news.html" class="last-card__link"></a>
                 <img src="img/Image-8.jpg" alt="img" class="card__img" />
                 <div class="last-card__text-wrapper">
                   <h3 class="last-card__title-smoll card__title-smoll hover">
-                    Будущее Работы 
+                    Будущее Работы
                   </h3>
                   <span class="card__text"
                     >Большинство людей будут работать на рабочих местах, которых
@@ -696,12 +744,14 @@
                 <!-- /.card__bottom -->
               </div>
               <!-- /.card -->
-              <div class="everything-last__card last-card last-card--hover card">
+              <div
+                class="everything-last__card last-card last-card--hover card"
+              >
                 <a href="news.html" class="last-card__link"></a>
                 <img src="img/Image-9.jpg" alt="img" class="card__img" />
                 <div class="last-card__text-wrapper">
                   <h3 class="last-card__title-smoll card__title-smoll hover">
-                    Будущее Данных 
+                    Будущее Данных
                   </h3>
                   <span class="card__text"
                     >Благодаря нескончаемым объемам данных и количеству
@@ -732,11 +782,11 @@
               <div
                 class="everything-last__card everything-last__card--none last-card last-card--hover card"
               >
-              <a href="news.html" class="last-card__link"></a>
+                <a href="news.html" class="last-card__link"></a>
                 <img src="img/Image-9.jpg" alt="img" class="card__img" />
                 <div class="last-card__text-wrapper">
                   <h3 class="last-card__title-smoll card__title-smoll hover">
-                    Будущее Данных 
+                    Будущее Данных
                   </h3>
                   <span class="card__text"
                     >Благодаря нескончаемым объемам данных и количеству
@@ -767,12 +817,12 @@
               <div
                 class="everything-last__card everything-last__card--none-smole last-card last-card--hover card"
               >
-              <a href="news.html" class="last-card__link"></a>
-              
+                <a href="news.html" class="last-card__link"></a>
+
                 <img src="img/Image-10.jpg" alt="img" class="card__img" />
                 <div class="last-card__text-wrapper">
                   <h3 class="last-card__title-smoll card__title-smoll hover">
-                    Будущее Обучения 
+                    Будущее Обучения
                   </h3>
                   <span class="card__text"
                     >Постоянная способность учиться будет на самых важных
@@ -814,29 +864,63 @@
       <!-- /.container -->
     </section>
     <!-- /.everything -->
-    <section class="bg-top"></section>
+    <section class="bg-top">
+      <h6 class="bg-top__title">t</h6>
+    </section>
     <!-- /.bg-top -->
+    <a id="anchor1"><div></div></a>
+    <a
+      style="
+        position: fixed;
+        bottom: 60px;
+        right: 1px;
+        cursor: pointer;
+        display: none;
+      "
+      href="#"
+      id="Go_Top"
+      class="go-top"
+    >
+    </a>
+
     <section class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__wrapper-top">
           <div class="footer__subscribe subscribe">
-            <h3 class="subscribe__title">Получите наши истории на ваш почтовый ящик еженедельно.</h3>
+            <h3 class="subscribe__title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h3>
             <form action="send.php" method="POST" class="subscribe__form">
-              <input type="email" class="input subscribe__input" placeholder="Ваш Email" name="email" required />
-              <button class="subscribe__button button-2 hover-btn">Начать</button>
+              <div class="subscribe__box">
+                <input
+                  type="email"
+                  class="input subscribe__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="subscribe__box">
+                <button class="subscribe__button button-2 hover-btn">
+                  Начать
+                </button>
+              </div>
             </form>
-            <div class="subscribe__text">Получите ответ завтра, если отправите его до 9 вечера сегодня. Если мы получили после 9 вечера, мы получим ответ на
-            следующий день.</div>
+            <div class="subscribe__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </div>
             <!-- /.subscribe__text -->
           </div>
           <!-- /.subscription__wrapper -->
           <div class="footer__advertising advertising">
             <div class="advertising__card">
-              <img src="img/adv-img.jpg" alt="image" class="advertising__img">
+              <img src="img/adv-img.jpg" alt="image" class="advertising__img" />
               <h4 class="advertising__title">Лучшие статьи каждую неделю</h4>
-              <span class="advertising__text">Наши предложения по страхованию везде одинаковы.
-</span>
-
+              <span class="advertising__text"
+                >Наши предложения по страхованию везде одинаковы.
+              </span>
             </div>
             <!-- /.advertising__card -->
           </div>
@@ -846,16 +930,62 @@
         <div class="footer__wrapper-center">
           <div class="footer__logo footer-logo">
             <a href="index.html" class="footer-logo__link">
-              <img src="img/Logo.svg" alt="logo:ehya" class="footer-logo__img">
-            </a> <!-- /.logo__link -->
-            <span class="footer-logo__text">Создайте современный и креативный веб-сайт с crealand</span>
+              <img
+                src="img/Logo.svg"
+                alt="logo:ehya"
+                class="footer-logo__img"
+              />
+            </a>
+            <!-- /.logo__link -->
+            <span class="footer-logo__text"
+              >Создайте современный и креативный веб-сайт с crealand</span
+            >
             <div class="footer-logo__social-wrapper">
-              <a  target="_blank" href="https://www.google.com/" class="footer-logo__social-link"><img src="img/google.svg" alt="icon: google" class="footer-logo__social-img"></a>
-              <a target="_blank" href="https://www.twitter.com/" class="footer-logo__social-link"><img src="img/twitter.svg" alt="icon: twitter" class="footer-logo__social-img"></a>
-              <a target="_blank" href="https://www.instagram.com/" class="footer-logo__social-link"><img src="img/instagram.svg" alt="icon: instagram" class="footer-logo__social-img"></a>
-              <a target="_blank" href="https://www.linkedin.com/" class="footer-logo__social-link"><img src="img/linkedin.svg" alt="icon: linkedin" class="footer-logo__social-img"></a>
-              <a target="_blank" href="https://www.youtube.com/" class="footer-logo__social-link"><img src="img/youtube.svg"
-                  alt="icon: youtube" class="footer-logo__social-img"></a>
+              <a
+                target="_blank"
+                href="https://www.google.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/google.svg"
+                  alt="icon: google"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.twitter.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/twitter.svg"
+                  alt="icon: twitter"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/instagram.svg"
+                  alt="icon: instagram"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/linkedin.svg"
+                  alt="icon: linkedin"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/youtube.svg"
+                  alt="icon: youtube"
+                  class="footer-logo__social-img"
+              /></a>
             </div>
             <!-- /.logo__social-wrapper -->
           </div>
@@ -864,11 +994,23 @@
             <div class="footer-nav__list footer-nav__product">
               <h4 class="footer-nav__title">Продукт</h4>
               <ul class="footer-nav__ul">
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Лендинг</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Функции</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Документация</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Скидки</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Расценки</a></li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Лендинг</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Функции</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Документация</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Скидки</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Расценки</a>
+                </li>
               </ul>
               <!-- /.footer-nav__ul -->
             </div>
@@ -876,33 +1018,64 @@
             <div class="footer-nav__list footer-nav__services">
               <h4 class="footer-nav__title">Сервисы</h4>
               <ul class="footer-nav__ul">
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Документация</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu ">Дизайн</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Темы</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Иллюстрации</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">UI Kit</a></li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Документация</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Дизайн</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Темы</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Иллюстрации</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">UI Kit</a>
+                </li>
               </ul>
               <!-- /.footer-nav__ul -->
             </div>
             <!-- /.footer-nav__list -->
             <div class="footer-nav__list footer-nav__company">
               <h4 class="footer-nav__title">Компания</h4>
-                <ul class="footer-nav__ul">
-                  <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">О нас</a></li>
-                  <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Условия</a></li>
-                  <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Политика
-                  конфиденциальности</a></li>
-                  <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Careers</a></li>
-                </ul>
-                <!-- /.footer-nav__ul -->
+              <ul class="footer-nav__ul">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">О нас</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Условия</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Careers</a>
+                </li>
+              </ul>
+              <!-- /.footer-nav__ul -->
             </div>
             <!-- /.footer-nav__list -->
             <div class="footer-nav__list footer-nav__other">
               <h4 class="footer-nav__title">Более</h4>
               <ul class="footer-nav__ul">
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Документация</a></li>
-                <li class="footer-nav__item hover-menu"><a href="#" class="footer-nav__link hover-menu">Лицензия</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link hover-menu">Измененния</a></li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Документация</a
+                  >
+                </li>
+                <li class="footer-nav__item hover-menu">
+                  <a href="#" class="footer-nav__link hover-menu">Лицензия</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Измененния</a>
+                </li>
               </ul>
               <!-- /.footer-nav__ul -->
             </div>
@@ -912,48 +1085,57 @@
         </div>
         <!-- /.footer__wrapper-center -->
         <div class="footer__wrapper-bottom">
-          <button class="footer__button-like"></button> <!-- /.footer__button-like -->
-          <span class="footer__copyright">Copyright © 2019. Crafted with love.</span>
+          <button class="footer__button-like"></button>
+          <!-- /.footer__button-like -->
+          <span class="footer__copyright"
+            >Copyright © 2019. Crafted with love.</span
+          >
         </div>
         <!-- /.footer__wrapper-bottom -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.footer -->
-    <div class="modal">
-      <div class="modal__overlay"></div>
+    <div class="modal-container modal">
+      <div class="modal__overlay" id="modal_ctnr"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+      <div class="modal__dialog" id="mod">
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <img class="modal__logo" src="img/Logo.svg" alt="logo" />
         <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Фамилия Имя*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="phone input modal__input"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-            minlength="18"
-            id="phone2"
-          />
+          <div class="modal__box">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Фамилия Имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__box">
+            <input
+              type="tel"
+              class="phone input modal__input"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="18"
+              id="phone2"
+            />
+          </div>
+          <div class="modal__box">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
 
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
           <textarea
             class="message input modal__message"
             placeholder="Сообщение"
@@ -969,8 +1151,11 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

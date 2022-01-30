@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ehya:Отдел новостей</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header id="#header" class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo header-logo"
+            ><img src="img/Logo.svg" alt="logo" class="header-logo__img"
+          /></a>
+          <div class="header__navbar-top">
+            <nav class="header__nav header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link hover-menu">Домой</a>
+                </li>
+                <li class="header-nav__item">
+                  <div class="header-nav__dropdown dropdown">
+                    <span
+                      class="header-nav__link header-nav__link--arrow hover-menu"
+                      >Лэндинги</span
+                    >
+
+                    <div class="dropdown-content">
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Лэндинги 1</a
+                      >
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Лэндинги 2</a
+                      >
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Лэндинги 3</a
+                      >
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Лэндинги 4</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="header-nav__item">
+                  <div class="header-nav__dropdown dropdown">
+                    <span
+                      class="header-nav__link header-nav__link--arrow hover-menu"
+                      >Cтраницы</span
+                    >
+                    <div class="dropdown-content">
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Cтраница 1</a
+                      >
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Cтраница 2</a
+                      >
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Cтраница 3</a
+                      >
+                      <a class="dropdown-content__link hover-menu" href="#"
+                        >Cтраница 4</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link hover-menu">Помощь</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.header__nav -->
+            <button data-toggle="modal" class="header__button button-1 hover-1">
+              Получить
+            </button>
+          </div>
+          <!-- /.header__navbar-top -->
+          <button class="header__menu-button menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.header__wrapper -->
+      </div>
+      <!-- /.container -->
+      <div class="container">
+        <div class="header__navbar-bottom">
+          <nav class="header__nav header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="index.html" class="header-nav__link">Домой</a>
+              </li>
+              <li class="header-nav__item">
+                <a
+                  data-target="#one"
+                  href="#"
+                  class="header-nav__link header-nav__link--arrow-2"
+                  >Лендинги</a
+                >
+                <ul
+                  id="one"
+                  class="header-nav__dropdown bottom-dropdown dropdown"
+                >
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Лендинг 4</a>
+                  </li>
+                </ul>
+                <!-- /.header-nav__drop-down -->
+              </li>
+              <li class="header-nav__item">
+                <a
+                  data-target="#two"
+                  href="#"
+                  class="header-nav__link header-nav__link--arrow-2"
+                  >Страницы</a
+                >
+                <ul
+                  id="two"
+                  class="header-nav__dropdown bottom-dropdown dropdown"
+                >
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 1</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 2</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 3</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">Страница 4</a>
+                  </li>
+                </ul>
+                <!-- /.header-nav__drop-down -->
+              </li>
+              <li class="header-nav__item">
+                <a href="#" class="header-nav__link">Помощь</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.header__nav -->
+          <button data-toggle="modal" class="header__button button-1">
+            Получить
+          </button>
+        </div>
+        <!-- /.header__navbar-bottom -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <section class="success">
+      <div class="container">
+        <div class="success-wrapper">
+          <div class="success__text success-text">
+            <h1 class="success-text__title title">Сообщение отправлено</h1>
+
+            <img
+              src="img/emails-amico.svg"
+              alt="image mail"
+              class="success__img"
+            />
+            <a href="index.html" class="success__button button-2 hover-btn"
+              >Вернуться назад</a
+            >
+            <!-- /.button success__button -->
+          </div>
+          <!-- /.success__text -->
+        </div>
+        <!-- /.success-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.success -->
+
+    <a id="anchor1"></a>
+    <a href="#" id="Go_Top" class="go-top"> </a>
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__wrapper-top">
+          <div class="footer__subscribe subscribe">
+            <h3 class="subscribe__title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h3>
+            <form action="send.php" method="POST" class="subscribe__form">
+              <div class="subscribe__box">
+                <input
+                  type="email"
+                  class="input subscribe__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="subscribe__box">
+                <button class="subscribe__button button-2 hover-btn">
+                  Начать
+                </button>
+              </div>
+            </form>
+            <div class="subscribe__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </div>
+            <!-- /.subscribe__text -->
+          </div>
+          <!-- /.subscription__wrapper -->
+          <div class="footer__advertising advertising">
+            <div class="advertising__card">
+              <img src="img/adv-img.jpg" alt="image" class="advertising__img" />
+              <h4 class="advertising__title">Лучшие статьи каждую неделю</h4>
+              <span class="advertising__text"
+                >Наши предложения по страхованию везде одинаковы.
+              </span>
+            </div>
+            <!-- /.advertising__card -->
+          </div>
+          <!-- /.advertising__wrapper -->
+        </div>
+        <!-- /.footer__wrapper-top -->
+        <div class="footer__wrapper-center">
+          <div class="footer__logo footer-logo">
+            <a href="index.html" class="footer-logo__link">
+              <img
+                src="img/Logo.svg"
+                alt="logo:ehya"
+                class="footer-logo__img"
+              />
+            </a>
+            <!-- /.logo__link -->
+            <span class="footer-logo__text"
+              >Создайте современный и креативный веб-сайт с crealand</span
+            >
+            <div class="footer-logo__social-wrapper">
+              <a
+                target="_blank"
+                href="https://www.google.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/google.svg"
+                  alt="icon: google"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.twitter.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/twitter.svg"
+                  alt="icon: twitter"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/instagram.svg"
+                  alt="icon: instagram"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/linkedin.svg"
+                  alt="icon: linkedin"
+                  class="footer-logo__social-img"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/"
+                class="footer-logo__social-link"
+                ><img
+                  src="img/youtube.svg"
+                  alt="icon: youtube"
+                  class="footer-logo__social-img"
+              /></a>
+            </div>
+            <!-- /.logo__social-wrapper -->
+          </div>
+          <!-- /.logo__wrapper -->
+          <div class="footer__nav footer-nav">
+            <div class="footer-nav__list footer-nav__product">
+              <h4 class="footer-nav__title">Продукт</h4>
+              <ul class="footer-nav__ul">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Лендинг</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Функции</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Документация</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Скидки</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Расценки</a>
+                </li>
+              </ul>
+              <!-- /.footer-nav__ul -->
+            </div>
+            <!-- /.footer-nav__list -->
+            <div class="footer-nav__list footer-nav__services">
+              <h4 class="footer-nav__title">Сервисы</h4>
+              <ul class="footer-nav__ul">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Документация</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Дизайн</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Темы</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Иллюстрации</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">UI Kit</a>
+                </li>
+              </ul>
+              <!-- /.footer-nav__ul -->
+            </div>
+            <!-- /.footer-nav__list -->
+            <div class="footer-nav__list footer-nav__company">
+              <h4 class="footer-nav__title">Компания</h4>
+              <ul class="footer-nav__ul">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">О нас</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Условия</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Careers</a>
+                </li>
+              </ul>
+              <!-- /.footer-nav__ul -->
+            </div>
+            <!-- /.footer-nav__list -->
+            <div class="footer-nav__list footer-nav__other">
+              <h4 class="footer-nav__title">Более</h4>
+              <ul class="footer-nav__ul">
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu"
+                    >Документация</a
+                  >
+                </li>
+                <li class="footer-nav__item hover-menu">
+                  <a href="#" class="footer-nav__link hover-menu">Лицензия</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link hover-menu">Измененния</a>
+                </li>
+              </ul>
+              <!-- /.footer-nav__ul -->
+            </div>
+            <!-- /.footer-nav__list -->
+          </div>
+          <!-- /.footer__nav-wrapper -->
+        </div>
+        <!-- /.footer__wrapper-center -->
+        <div class="footer__wrapper-bottom">
+          <button class="footer__button-like"></button>
+          <!-- /.footer__button-like -->
+          <span class="footer__copyright"
+            >Copyright © 2019. Crafted with love.</span
+          >
+        </div>
+        <!-- /.footer__wrapper-bottom -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.footer -->
+
+    <div class="modal-container modal">
+      <div class="modal__overlay" id="modal_ctnr"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog" id="mod">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <img class="modal__logo" src="img/Logo.svg" alt="logo" />
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="modal__box">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Фамилия Имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__box">
+            <input
+              type="tel"
+              class="phone input modal__input"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="18"
+              id="phone2"
+            />
+          </div>
+          <div class="modal__box">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
+
+          <textarea
+            class="message input modal__message"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea>
+
+          <button class="button-2 modal__button hover" type="submit">
+            Отправить
+          </button>
+        </form>
+        <!-- /.modal__form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

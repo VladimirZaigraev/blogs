@@ -29,10 +29,32 @@
     border: 2px solid $light
   &__title
     margin-bottom: 20px
+    -ms-text-overflow: ellipsis
+    text-overflow: ellipsis
+    overflow: hidden
+    -ms-line-clamp: 3
+    -webkit-line-clamp: 3
+    line-clamp: 3
+    display: -webkit-box
+    display: box
+    word-wrap: break-word
+    -webkit-box-orient: vertical
+    box-orient: vertical
+
   &__text
     margin-bottom: 43px
     display: block
     margin-right: 20px
+    text-overflow: ellipsis
+    overflow: hidden
+    -ms-line-clamp: 3
+    -webkit-line-clamp: 3
+    line-clamp: 3
+    display: -webkit-box
+    display: box
+    word-wrap: break-word
+    -webkit-box-orient: vertical
+    box-orient: vertical
   &__bottom
     display: flex
     justify-content: space-between

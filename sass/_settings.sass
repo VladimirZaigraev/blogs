@@ -44,6 +44,8 @@ a
   height: 48px
   padding-left: 23px
   padding-right: 25px
+  padding-top: 13px
+  padding-bottom: 13px
   vertical-align: middle
 .button-2
   border: none
@@ -170,6 +172,17 @@ a
   background-color: $blue
 .box__title--hover:hover
   color: $blue
+.hover
+  &-prew:hover
+    background-color: $light
+    border: 2px solid $blue
+    background-image: url(../img/arrow-btn-1.svg)
+
+  &-next:hover
+    background-color: $light
+    border: 2px solid $blue
+    background-image: url(../img/arrow-btn.svg)
+
 .card
   position: relative
   border-radius: 16px
@@ -220,6 +233,17 @@ a
     border: 2px solid $light
   &__title
     @include subtitle-card
+    -ms-text-overflow: ellipsis
+    text-overflow: ellipsis
+    overflow: hidden
+    -ms-line-clamp: 3
+    -webkit-line-clamp: 3
+    line-clamp: 3
+    display: -webkit-box
+    display: box
+    word-wrap: break-word
+    -webkit-box-orient: vertical
+    box-orient: vertical
   &__title-smoll
     @include subtitle-card
     font-size: 28px
@@ -233,7 +257,17 @@ a
     line-height: 25px
     color: $light
     max-width: 270px
-    display: block
+    text-overflow: ellipsis
+    overflow: hidden
+    -ms-line-clamp: 3
+    -webkit-line-clamp: 3
+    line-clamp: 3
+    display: -webkit-box
+    display: box
+    word-wrap: break-word
+    -webkit-box-orient: vertical
+    box-orient: vertical
+
   &__bottom
     display: flex
     justify-content: space-between
@@ -258,3 +292,30 @@ a
   filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.64))
   transition-duration: 0.5s
   transition-timing-function: ease
+
+.go-top
+  background-image: url(../img/arrow-btn-top.svg)
+  background-size: 14px
+  -webkit-transform: translateY(-50%)
+  transform: translateY(-50%)
+  width: 56px
+  height: 56px
+  border-radius: 50%
+  z-index: 99
+  border: none
+  background-color: #1565D8
+  cursor: pointer
+  background-repeat: no-repeat
+  background-position: center
+  position: fixed
+  bottom: 40px
+  right: 1px
+  cursor: pointer
+  display: none
+  ::hover
+    background-image: url(../img/arrow-btn-top-blue.svg)
+    background-color: $light
+.form
+  position: relative
+.invalid
+  position: relative
