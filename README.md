@@ -1,5 +1,8 @@
 # Blogs
 
+### Сылка: 
+https://vladimirzaigraev.github.io/blogs/index.html
+
 ### Описание проекта
 Дипломный проект для практики на курсе Веб Старт от Glo Academy. 
 
@@ -12,5 +15,4 @@
 * SCSS - испольование универсальных кассов
 * PHP - подключение плагина для отправки писем
 
-### Сылка: 
-https://vladimirzaigraev.github.io/blogs/index.html
+
